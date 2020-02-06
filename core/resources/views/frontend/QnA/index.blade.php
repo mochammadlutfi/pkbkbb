@@ -54,7 +54,7 @@
                         </div>
                         <div class="blog__author-content" style="width:100%">
                             <a  href="{{ route('QA.detail', $p->slug) }}" class="blog__author-name mb-0">{{ $p->judul }}</a><br>
-                            <span>Oleh: {{ $p->user->name }}</span><span style="float:right;">{{ $p->created_at }}</span>
+                            <span>Oleh: {{ $p->user->name }}</span><span style="float:right;">{{ GeneralHelp::tgl_indo($p->created_at) }}</span>
                             <p class="blog__author-bio"><?= str_limit($p->deskripsi, 200) ?></p>
                         </div>
                     </div>

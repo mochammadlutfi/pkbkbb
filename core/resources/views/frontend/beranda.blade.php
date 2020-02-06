@@ -1,65 +1,65 @@
 @extends('frontend.layouts.master')
 @section('styles')
 <style>
-.sw-video {
-  text-align: center;
-  display: inline-block;
-  position: relative;
-}
+    .sw-video {
+        text-align: center;
+        display: inline-block;
+        position: relative;
+    }
 
-.sw-video .video__player {
-  font-size: 18px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  color: #222222;
-  position: relative;
-  display: inline-block;
-}
+    .sw-video .video__player {
+        font-size: 18px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        color: #222222;
+        position: relative;
+        display: inline-block;
+    }
 
-.sw-video .video__player-animation {
-  position: relative;
-  width: 66px;
-  height: 66px;
-}
+    .sw-video .video__player-animation {
+        position: relative;
+        width: 66px;
+        height: 66px;
+    }
 
-.sw-video .video__player-animation:before {
-  content: "";
-  position: absolute;
-  left: -3px;
-  top: -24px;
-  width: 66px;
-  height: 66px;
-  opacity: 1;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  -webkit-animation: pulsing 1s infinite linear;
-  -moz-animation: pulsing 1s infinite linear;
-  -ms-animation: pulsing 1s infinite linear;
-  -o-animation: pulsing 1s infinite linear;
-  animation: pulsing 1s infinite linear;
-}
+    .sw-video .video__player-animation:before {
+        content: "";
+        position: absolute;
+        left: -3px;
+        top: -24px;
+        width: 66px;
+        height: 66px;
+        opacity: 1;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        -webkit-animation: pulsing 1s infinite linear;
+        -moz-animation: pulsing 1s infinite linear;
+        -ms-animation: pulsing 1s infinite linear;
+        -o-animation: pulsing 1s infinite linear;
+        animation: pulsing 1s infinite linear;
+    }
 
-.sw-video .video__player-title {
-  text-transform: uppercase;
-  color: white;
-  font-size: 13px;
-  font-weight: 700;
-  padding-top: 20px;
-  margin-bottom: 0;
-  line-height: 1;
-}
+    .sw-video .video__player-title {
+        text-transform: uppercase;
+        color: white;
+        font-size: 13px;
+        font-weight: 700;
+        padding-top: 20px;
+        margin-bottom: 0;
+        line-height: 1;
+    }
 
-.sw-video:hover .video__player-animation:before {
-  opacity: 0;
-  -webkit-animation: none;
-  -moz-animation: none;
-  -ms-animation: none;
-  -o-animation: none;
-  animation: none;
-}
+    .sw-video:hover .video__player-animation:before {
+        opacity: 0;
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        -o-animation: none;
+        animation: none;
+    }
 </style>
 
 @endsection
@@ -74,9 +74,9 @@ Slider
         data-autoplay="true" data-nav="true" data-dots="true" data-space="0" data-loop="true" data-speed="3000"
         data-transition="fade" data-animate-out="fadeOut" data-animate-in="fadeIn">
         @foreach($slider as $s)
-            <div class="slide-item align-v bg-overlay bg-overlay-2">
-                <div class="bg-img"><img src="{{ asset('uploads/'.$s->path) }}" alt="slide img"></div>
-            </div><!-- /.slide-item -->
+        <div class="slide-item align-v bg-overlay bg-overlay-2">
+            <div class="bg-img"><img src="{{ asset('uploads/'.$s->path) }}" alt="slide img"></div>
+        </div><!-- /.slide-item -->
         @endforeach
     </div><!-- /.carousel -->
 </section><!-- /.slider -->
@@ -94,7 +94,8 @@ Slider
                     </div><!-- /.fancybox-icon -->
                     <div class="fancybox__content">
                         <h4 class="fancybox__title">SEJARAH</h4>
-                        <p class="fancybox__desc">Berdirinya partai politik yang bersifat kejuangan, kebangsaan, terbuka dan demokratis yang diberi nama Partai Kebangkitan Bangsa (PKB).</p>
+                        <p class="fancybox__desc">Berdirinya partai politik yang bersifat kejuangan, kebangsaan, terbuka
+                            dan demokratis yang diberi nama Partai Kebangkitan Bangsa (PKB).</p>
                         <div class="dotted__line"><span></span></div>
                     </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
@@ -107,7 +108,8 @@ Slider
                     </div><!-- /.fancybox-icon -->
                     <div class="fancybox__content">
                         <h4 class="fancybox__title">NASKAH DEKLARASI</h4>
-                        <p class="fancybox__desc">Cita-cita proklamasi kemerdekaan bangsa Indonesia adalah terwujudnya suatu bangsa yang merdeka dan bersatu</p>
+                        <p class="fancybox__desc">Cita-cita proklamasi kemerdekaan bangsa Indonesia adalah terwujudnya
+                            suatu bangsa yang merdeka dan bersatu</p>
                         <div class="dotted__line"><span></span></div>
                     </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
@@ -120,7 +122,8 @@ Slider
                     </div><!-- /.fancybox-icon -->
                     <div class="fancybox__content">
                         <h4 class="fancybox__title">MAB'DA SYI'ASI</h4>
-                        <p class="fancybox__desc">Wujud dari bangsa yang dicita-citakan itu adalah masyarakat yang terjamin hak asasi kemanusiaannya.</p>
+                        <p class="fancybox__desc">Wujud dari bangsa yang dicita-citakan itu adalah masyarakat yang
+                            terjamin hak asasi kemanusiaannya.</p>
                         <div class="dotted__line"><span></span></div>
                     </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
@@ -133,7 +136,8 @@ Slider
                     </div><!-- /.fancybox-icon -->
                     <div class="fancybox__content">
                         <h4 class="fancybox__title">VISI & MISI</h4>
-                        <p class="fancybox__desc">Mewujudkan cita-cita kemerdekaan Republik Indonesia sebagaimana dituangkan dalam Pembukaan Undang-Undang Dasar 1945</p>
+                        <p class="fancybox__desc">Mewujudkan cita-cita kemerdekaan Republik Indonesia sebagaimana
+                            dituangkan dalam Pembukaan Undang-Undang Dasar 1945</p>
                         <div class="dotted__line"><span></span></div>
                     </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
@@ -144,39 +148,108 @@ Slider
 
 <section id="team1" class="team team-1 text-center pt-100 pb-80">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-          <div class="heading heading-3 mb-60">
-            <h2 class="heading__title">Anggota Fraksi DPC PKB<br>Kab. Bandung Barat</h2>
-            <blockquote class="blockquote blockquote-3">
-                Keberhasilan seorang pemimpin diukur dari kemampuan mereka dalam menyejahterakan umat yang mereka pimpin
-                <span class="quote__author">Gusdur</span>
-            </blockquote>
-            <div class="divider__line"></div>
-          </div><!-- /.heading -->
-        </div><!-- /.col-lg-6 -->
-      </div><!-- /.row -->
-      <div class="row justify-content-center">
-        @for($i=1; $i <= 5; $i++)
-        <div class="col-sm-12 col-md-4 col-lg-4">
-          <div class="member">
-            <div class="member__img">
-              <img src="{{ asset('assets/frontend/img/team/1.jpg') }}" alt="member img">
-            </div><!-- /.member-img -->
-            <div class="member__info">
-              <h5 class="member__name">Ahmed Abd Alhaleem</h5>
-              <p class="member__desc">Graphic Designer</p>
-            </div><!-- /.member-info -->
-            <div class="social__icons justify-content-center">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-            </div><!-- /.social-icons -->
-          </div><!-- /.member -->
-        </div><!-- /.col-lg-4 -->
-        @endfor
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+                <div class="heading heading-3 mb-60">
+                    <h2 class="heading__title">Anggota Fraksi DPC PKB<br>Kab. Bandung Barat</h2>
+                    <blockquote class="blockquote blockquote-3">
+                        Keberhasilan seorang pemimpin diukur dari kemampuan mereka dalam menyejahterakan umat yang
+                        mereka pimpin
+                        <span class="quote__author">Gusdur</span>
+                    </blockquote>
+                    <div class="divider__line"></div>
+                </div><!-- /.heading -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
 
-      </div><!-- /.row -->
+        <div class="row justify-content-center">
+
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="member">
+                    <div class="member__img">
+                        <img src="{{ asset('assets/frontend/img/team/1.jpg') }}" alt="member img">
+                    </div><!-- /.member-img -->
+                    <div class="member__info">
+                        <h5 class="member__name">Wendi Sukmawijaya, S.AG </h5>
+                        <p class="member__desc">Ketua Fraksi</p>
+                    </div><!-- /.member-info -->
+                    <div class="social__icons justify-content-center">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div><!-- /.social-icons -->
+                </div><!-- /.member -->
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="member">
+                    <div class="member__img">
+                        <img src="{{ asset('assets/frontend/img/team/1.jpg') }}" alt="member img">
+                    </div><!-- /.member-img -->
+                    <div class="member__info">
+                        <h5 class="member__name">Asep Sudrajat, S.Kom.,MM</h5>
+                        <p class="member__desc">Sekretaris Fraksi</p>
+                    </div><!-- /.member-info -->
+                    <div class="social__icons justify-content-center">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div><!-- /.social-icons -->
+                </div><!-- /.member -->
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="member">
+                    <div class="member__img">
+                        <img src="{{ asset('assets/frontend/img/team/1.jpg') }}" alt="member img">
+                    </div><!-- /.member-img -->
+                    <div class="member__info">
+                        <h5 class="member__name">Drs. Akhmad Kosasih</h5>
+                        <p class="member__desc">Anggota Fraksi</p>
+                    </div><!-- /.member-info -->
+                    <div class="social__icons justify-content-center">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div><!-- /.social-icons -->
+                </div><!-- /.member -->
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="member">
+                    <div class="member__img">
+                        <img src="{{ asset('assets/frontend/img/team/1.jpg') }}" alt="member img">
+                    </div><!-- /.member-img -->
+                    <div class="member__info">
+                        <h5 class="member__name">Ust. Alit Munawar</h5>
+                        <p class="member__desc">Anggota Fraksi</p>
+                    </div><!-- /.member-info -->
+                    <div class="social__icons justify-content-center">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div><!-- /.social-icons -->
+                </div><!-- /.member -->
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="member">
+                    <div class="member__img">
+                        <img src="{{ asset('assets/frontend/img/team/1.jpg') }}" alt="member img">
+                    </div><!-- /.member-img -->
+                    <div class="member__info">
+                        <h5 class="member__name">H. Ade Wawan, S.PDi</h5>
+                        <p class="member__desc">Anggota Fraksi</p>
+                    </div><!-- /.member-info -->
+                    <div class="social__icons justify-content-center">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div><!-- /.social-icons -->
+                </div><!-- /.member -->
+            </div><!-- /.col-lg-4 -->
+
+        </div><!-- /.row -->
     </div><!-- /.container -->
 </section><!-- /.team1  -->
 
@@ -191,37 +264,37 @@ Blog
             <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
                 <div class="heading heading-3 text-center mb-60">
                     <h2 class="heading__title">Berita Terbaru Kami</h2>
-                    <p class="heading__desc">Follow website Kami untuk mendapatkan informasi terbaru tentang DPC PKB Bandung Barat & Informasi Seputar Bandung Barat</p>
+                    <p class="heading__desc">Follow website Kami untuk mendapatkan informasi terbaru tentang DPC PKB
+                        Bandung Barat & Informasi Seputar Bandung Barat</p>
                     <div class="divider__line"></div>
                 </div><!-- /.heading -->
             </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
         <div class="row">
 
-            @for($i=1; $i <= 3; $i++)
-            <!-- Blog Item #1 -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="blog-item">
-                    <div class="blog__img">
-                        <a href="#">
-                            <img src="{{ asset('assets/frontend/img/blog/grid/1.jpg') }}" alt="blog image">
-                        </a>
-                    </div><!-- /.entry-img -->
-                    <div class="blog__content">
-                        <div class="blog__meta">
-                            <div class="blog__meta-cat">
-                                <a href="#">Business</a><a href="#">Tips</a>
-                            </div><!-- /.blog-meta-cat -->
-                            <span class="blog__meta-date">Jan 20, 2019</span>
-                        </div><!-- /.blog-meta -->
-                        <h4 class="blog__title"><a href="#">Four ways to cheer yourself up on Blue Monday!</a></h4>
-                        <p class="blog__desc">The third Monday of January is supposed to be day of year. Whether you
-                            believe that or not....</p>
-                        <a href="#" class="btn btn__secondary btn__link">Read More</a>
-                    </div><!-- /.entry-content -->
-                </div><!-- /.blog-item -->
-            </div><!-- /.col-lg-4 -->
-            @endfor
+            @for($i=1; $i <= 3; $i++) <!-- Blog Item #1 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog__img">
+                            <a href="#">
+                                <img src="{{ asset('assets/frontend/img/blog/grid/1.jpg') }}" alt="blog image">
+                            </a>
+                        </div><!-- /.entry-img -->
+                        <div class="blog__content">
+                            <div class="blog__meta">
+                                <div class="blog__meta-cat">
+                                    <a href="#">Business</a><a href="#">Tips</a>
+                                </div><!-- /.blog-meta-cat -->
+                                <span class="blog__meta-date">Jan 20, 2019</span>
+                            </div><!-- /.blog-meta -->
+                            <h4 class="blog__title"><a href="#">Four ways to cheer yourself up on Blue Monday!</a></h4>
+                            <p class="blog__desc">The third Monday of January is supposed to be day of year. Whether you
+                                believe that or not....</p>
+                            <a href="#" class="btn btn__secondary btn__link">Read More</a>
+                        </div><!-- /.entry-content -->
+                    </div><!-- /.blog-item -->
+                </div><!-- /.col-lg-4 -->
+                @endfor
         </div><!-- /.row -->
     </div><!-- /.container -->
 </section><!-- /.blog -->
